@@ -1,1 +1,89 @@
+body {
+    background: #753939;
+    font-family: 'Georgia', serif;
+}
 
+/*Navbar*/
+.navbar {
+    background: #e8c28ce2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/* home */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.image-card {
+    background: #e3caaf;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3),
+        0 20px 60px rgba(0, 0, 0, 0.4);
+    max-width: 850px;
+    width: 90%;
+}
+
+.restaurant-img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+/*Menu */
+
+.card-body {
+    background: #e3caaf;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3),
+        0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    color: #2b1f17;
+}
+
+/* form, orderpage*/
+
+.container {
+    background: #e3caaf;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3),
+        0 20px 60px rgba(0, 0, 0, 0.4);
+    max-width: 700px;
+}
+
+.form-label {
+    color: #513b2b;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #6f513a;
+
+}
+
+.form-control:focus {
+    border-color: #7c4f48;
+    box-shadow: 0 0 8px rgba(139, 58, 46, 0.4);
+}
+
+.btn {
+    background-color: #8b3a2e;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #5c2c1d;
+}
