@@ -7,6 +7,7 @@ import { Home } from './pages/Home'
 import { Menu } from './pages/Menu'
 import { OrderPage } from './pages/OrderPage'
 import { Navbar } from './components/Navbar'
+import { Chatbot } from './components/Chatbot'
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Menu' element={<Menu />} />
           <Route path='/OrderPage' element={<OrderPage />} />
+          <Route path='/Chatbot' element={<Chatbot />} />
         </Routes>
       </BrowserRouter>
     </>
