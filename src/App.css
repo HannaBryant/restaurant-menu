@@ -46,9 +46,32 @@ body {
 
 h2 {
     color: #2b1f17;
+    text-align: center;
+}
+
+p {
+      text-align: center;
 }
 
 /* form, orderpage*/
+
+.order-page{
+
+    display: flex;
+}
+
+
+.order-form {
+
+ background: #e3caaf;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3),
+        0 20px 60px rgba(0, 0, 0, 0.4);
+    max-width: 850px;
+    width: 90%;
+}
 
 .container {
     background: #e3caaf;
@@ -58,6 +81,7 @@ h2 {
         0 10px 25px rgba(0, 0, 0, 0.3),
         0 20px 60px rgba(0, 0, 0, 0.4);
     max-width: 700px;
+    justify-content: center;
 }
 
 .form-label {
@@ -86,4 +110,52 @@ h2 {
 
 .btn:hover {
     background-color: #5c2c1d;
+}
+
+/* chatbot*/
+
+.chatbot-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #e3caaf;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.3),
+    0 20px 60px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.chat-history {
+  background: #fffaf3;
+  height: 250px;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: left;
+}
+
+.chat-history p {
+  margin: 8px 0;
+}
+.text-dark {
+  text-align: left;
+}
+
+.text-secondary {
+  text-align: right;
+  color: #5d451b;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #6f513a;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #7c4f48;
+  box-shadow: 0 0 8px rgba(139, 58, 46, 0.4);
 }

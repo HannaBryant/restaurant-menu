@@ -50,9 +50,10 @@ export const OrderPage = () => {
 
     return (
         <>
-            <main className='container mt-4'>
+            <main className='container mt-4 order-page'>
 
-                <form onSubmit={onSubmitHandler}>
+                <form className='order-form' onSubmit={onSubmitHandler}>
+                    <h2>Saw something you like?</h2>
                     
                     <div className='mb-4'>
                         <label className='form-label'>Name</label>

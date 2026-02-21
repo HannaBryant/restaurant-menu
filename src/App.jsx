@@ -7,7 +7,8 @@ import { Home } from './pages/Home'
 import { Menu } from './pages/Menu'
 import { OrderPage } from './pages/OrderPage'
 import { Navbar } from './components/Navbar'
-import { Chatbot } from './components/Chatbot'
+import { Chatbot } from './pages/Chatbot'
+
 
 function App() {
   
