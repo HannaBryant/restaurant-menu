@@ -15,13 +15,13 @@ export const Navbar = () => {
                                 <a className="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/Menu">Our Menu</a>
+                                <a className="nav-link" href="/#/Menu">Our Menu</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/OrderPage">Order Now</a>
+                                <a className="nav-link" href="/#/OrderPage">Order Now</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/Chatbot">Chat with Sam</a>
+                                <a className="nav-link" href="/#/Chatbot">Chat with Sam</a>
                             </li>
                         </ul>
                     </div>
