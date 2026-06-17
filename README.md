@@ -1,16 +1,74 @@
-# React + Vite
+# Southern Comforts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A restaurant web application for Southern Comforts, built with React and Vite. Customers can browse the menu, place orders, and chat with an AI-powered waiter.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home** — Landing page with restaurant imagery.
+- **Menu** — Dynamically loaded menu items (breakfast, lunch, dinner, drinks) fetched from a Supabase database.
+- **Order** — Simple order form that submits customer orders to Supabase.
+- **AI Chatbot (Sam)** — A conversational chatbot powered by Google Gemini that answers menu-related questions in a friendly southern style.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **Frontend:** React 19, React Router 7, Vite 7
+- **Styling:** Bootstrap 5, custom CSS
+- **Backend/Database:** Supabase (REST API)
+- **AI Integration:** Google Gemini API
+- **Build Tool:** Vite with SWC (via @vitejs/plugin-react-swc)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18+)
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env` file in the project root with the following variables:
+
+```
+VITE_SUPABASE_URL=<your-supabase-url>
+VITE_TOKEN=<your-supabase-api-key>
+VITE_GEMINI_URL=<your-gemini-api-url>
+VITE_GEMINI_KEY=<your-gemini-api-key>
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Production Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Card.jsx          # Menu item card
+│   ├── ChatbotForm.jsx   # Chatbot conversation UI
+│   └── Navbar.jsx        # Navigation bar
+├── pages/
+│   ├── Home.jsx          # Landing page
+│   ├── Menu.jsx          # Menu display page
+│   ├── OrderPage.jsx     # Order submission form
+│   └── Chatbot.jsx       # AI chatbot page
+├── App.jsx               # Root component with routing
+├── App.css               # Application styles
+├── main.jsx              # Entry point
+└── index.css             # Global styles
+```
